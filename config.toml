@@ -1,30 +1,28 @@
 # Override these settings with your own
-languageCode = "es-es"
+locale = "es-es"
 title = "Jesús Millán"
-baseURL = "https:/jmillandev.github.io"
-theme = "hugo-theme-codex" 
+baseURL = "https://jmillandev.github.io/"
+theme = "hugo-theme-codex"
 copyright = "© {year}"
 
-# Add your Disqus shortname here.
-disqusShortname = "jmillandev"
-
-# Add your Google Analytics identifier: UA-XXXXXXXX-X
-googleAnalytics = "" 
+[services]
+  [services.disqus]
+    shortname = "jmillandev"
 
 # Optional params
 [params]
   avatarurl = "/images/avatar.jpeg"
 
-  # Follow the Hugo date/time format reference here: 
+  # Follow the Hugo date/time format reference here:
   # https://gohugo.io/functions/format/#gos-layout-string
   dateFormat = "Jan 2 2006"
 
   twitter = "https://twitter.com/jmillandev"
   github = "https://github.com/jmillandev"
   linkedin = "https://www.linkedin.com/in/jmillandev-42664412a/"
-  
+
   # Titles for your icons (shown as tooltips), and also their display order.
-  # Currently, these icons are supported: 
+  # Currently, these icons are supported:
   #   "Twitter", "GitHub", "Email", "Facebook", "GitLab", "Instagram", "LinkedIn", "YouTube"
   iconOrder = ["Twitter", "GitHub", "LinkedIn"]
 
@@ -42,7 +40,7 @@ googleAnalytics = ""
 [markup]
   [markup.highlight]
     codeFences = false
-    
+
   # Set to false to disallow raw HTML in markdown files
   [markup.goldmark.renderer]
       unsafe = true
@@ -59,9 +57,3 @@ googleAnalytics = ""
   name = "Blog"
   title = "Blog"
   url = "/blog/"
-
-[[menu.main]]
-  identifier = "apuntes"
-  name = "Apuntes"
-  title = "Apuntes"
-  url = "/apuntes/"
